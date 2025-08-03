@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bimjx</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-white border-bottom">
+        <div class="container">
+            <!-- Left: Navigation Links -->
+            <div class="d-flex align-items-center">
+                <a class="navbar-brand fw-bold me-4" href="#">bimjx</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav flex-row gap-2">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Certificates</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Right: Night/Day Toggle & GitHub -->
+            <div class="d-flex align-items-center gap-2">
+                <button id="themeToggle" class="btn btn-outline-secondary" title="Toggle Night/Day">
+                    <i class="bi bi-moon"></i>
+                </button>
+                <a href="https://github.com/" target="_blank" class="btn btn-outline-dark" title="GitHub">
+                    <i class="bi bi-github"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <script>
+        // Simple theme toggle (night/day)
+        const themeToggle = document.getElementById('themeToggle');
+        themeToggle.addEventListener('click', function () {
+            document.body.classList.toggle('bg-dark');
+            document.body.classList.toggle('text-light');
+            themeToggle.innerHTML =
+                document.body.classList.contains('bg-dark')
+                    ? '<i class="bi bi-sun"></i>'
+                    : '<i class="bi bi-moon"></i>';
+        });
+    </script>
+
+    <!-- Introduction Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Text and Buttons -->
+                <div class="col-md-7">
+                    <h1 class="mb-3">Hello, I'm <span class="text-primary">Briana</span></h1>
+                    <p class="lead">
+                        I'm a graduating Computer Engineering student with a strong passion for technology, creativity, and innovation. While my background includes hands-on experience in programming, circuit design, and system integration, I've recently grown a deep interest in website development and graphic design. I enjoy building visually appealing and functional digital experiences, and I'm always excited to explore new tools, frameworks, and design trends. Welcome to my portfolio, where I showcase my projects, skills, and journey through the evolving world of engineering and digital design!
+                    </p>
+                    <div class="mt-4">
+                        <a href="https://www.linkedin.com/" target="_blank" class="btn btn-outline-primary me-2">
+                            <i class="bi bi-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="mailto:your.email@example.com" class="btn btn-outline-secondary me-2">
+                            <i class="bi bi-envelope"></i> Email
+                        </a>
+                        <a href="https://github.com/" target="_blank" class="btn btn-outline-dark">
+                            <i class="bi bi-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+                <!-- Image Placeholder -->
+                <div class="col-md-5 text-center">
+                    <a href="#" id="profileImageLink">
+                        <img src="" alt="Profile Image" class="img-fluid rounded-circle shadow" style="width:300px;height:300px;object-fit:cover;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section py-5 border-top">
+        <div class="container">
+            <h2 class="text-center mb-4">Skills & Tools</h2>
+            <p class="text-center mb-4">
+                Here are some of the technologies and tools I have experience with. From front-end development to programming logic and design, I enjoy creating efficient and visually appealing solutions. I’m always eager to learn and expand my skill set!
+            </p>
+            <!-- Skill Categories Grid -->
+            <div class="row justify-content-center mb-4">
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100 border-0 shadow-sm rounded-4">
+                        <div class="card-body text-center">
+                            <div class="mb-2">
+                                <i class="bi bi-code-slash text-primary fs-2"></i>
+                            </div>
+                            <h5 class="card-title mb-2">Web Development</h5>
+                            <p class="card-text small text-muted">
+                                Building responsive websites using HTML, CSS, JavaScript, and Bootstrap. Focused on clean code, accessibility, and modern UI/UX.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100 border-0 shadow-sm rounded-4">
+                        <div class="card-body text-center">
+                            <div class="mb-2">
+                                <i class="bi bi-cpu text-success fs-2"></i>
+                            </div>
+                            <h5 class="card-title mb-2">Programming & Logic</h5>
+                            <p class="card-text small text-muted">
+                                Experienced in Python, Go, and C++. Skilled in problem-solving, automation, and building efficient algorithms for various platforms.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100 border-0 shadow-sm rounded-4">
+                        <div class="card-body text-center">
+                            <div class="mb-2">
+                                <i class="bi bi-palette text-warning fs-2"></i>
+                            </div>
+                            <h5 class="card-title mb-2">Graphic & UI Design</h5>
+                            <p class="card-text small text-muted">
+                                Creating engaging visuals and layouts with Canva and Figma. Passionate about color theory, typography, and intuitive design.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Skill Highlights Badges -->
+            <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
+                <span class="badge rounded-pill bg-primary px-3 py-2"><i class="bi bi-lightning-charge me-1"></i> Fast Learner</span>
+                <span class="badge rounded-pill bg-success px-3 py-2"><i class="bi bi-gear me-1"></i> Problem Solver</span>
+                <span class="badge rounded-pill bg-info px-3 py-2"><i class="bi bi-brush me-1"></i> Creative Thinker</span>
+                <span class="badge rounded-pill bg-secondary px-3 py-2"><i class="bi bi-people me-1"></i> Team Player</span>
+                <span class="badge rounded-pill bg-warning text-dark px-3 py-2"><i class="bi bi-rocket me-1"></i> Innovator</span>
+            </div>
+            <!-- Skills Carousel -->
+            <div class="skills-carousel mb-3" style="overflow:hidden;">
+                <div class="skills-track d-flex flex-nowrap" id="skillsTrack">
+                    <div class="skill-item d-flex flex-column align-items-center justify-content-center mx-2">
+                        <span class="skill-icon text-danger"><i class="bi bi-filetype-html"></i></span>
+                        <div>HTML</div>
+                    </div>
+                    <div class="skill-item d-flex flex-column align-items-center justify-content-center mx-2">
+                        <span class="skill-icon text-primary"><i class="bi bi-filetype-css"></i></span>
+                        <div>CSS</div>
+                    </div>
+                    <div class="skill-item d-flex flex-column align-items-center justify-content-center mx-2">
+                        <span class="skill-icon text-warning"><i class="bi bi-filetype-js"></i></span>
+                        <div>JavaScript</div>
+                    </div>
+                    <div class="skill-item d-flex flex-column align-items-center justify-content-center mx-2">
+                        <span class="skill-icon text-info"><i class="bi bi-bootstrap"></i></span>
+                        <div>Bootstrap</div>
+                    </div>
+                    <div class="skill-item d-flex flex-column align-items-center justify-content-center mx-2">
+                        <span class="skill-icon text-success"><i class="bi bi-box"></i></span>
+                        <div>UAdmin</div>
+                    </div>
+                    <div class="skill-item d-flex flex-column align-items-center justify-content-center mx-2">
+                        <span class="skill-icon" style="color:#00ADD8;"><i class="bi bi-terminal"></i></span>
+                        <div>Go</div>
+                    </div>
+                    <div class="skill-item d-flex flex-column align-items-center justify-content-center mx-2">
+                        <span class="skill-icon text-secondary"><i class="bi bi-filetype-py"></i></span>
+                        <div>Python</div>
+                    </div>
+                    <div class="skill-item d-flex flex-column align-items-center justify-content-center mx-2">
+                        <span class="skill-icon text-primary"><i class="bi bi-filetype-cpp"></i></span>
+                        <div>C++</div>
+                    </div>
+                    <div class="skill-item d-flex flex-column align-items-center justify-content-center mx-2">
+                        <span class="skill-icon" style="color:#00c4cc;">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <circle cx="16" cy="16" r="16" fill="#00c4cc"/>
+                                <text x="16" y="21" text-anchor="middle" font-size="14" fill="#fff" font-family="Arial" font-weight="bold">Canva</text>
+                            </svg>
+                        </span>
+                        <div>Canva</div>
+                    </div>
+                    <div class="skill-item d-flex flex-column align-items-center justify-content-center mx-2">
+                        <span class="skill-icon" style="color:#F24E1E;">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <rect x="8" y="4" width="16" height="8" rx="4" fill="#F24E1E"/>
+                                <rect x="8" y="12" width="16" height="8" rx="4" fill="#A259FF"/>
+                                <rect x="8" y="20" width="8" height="8" rx="4" fill="#1ABCFE"/>
+                                <rect x="16" y="20" width="8" height="8" rx="4" fill="#0ACF83"/>
+                            </svg>
+                        </span>
+                        <div>Figma</div>
+                    </div>
+                    <!-- Repeat for seamless scroll -->
+                    <div class="skill-item d-flex flex-column align-items-center justify-content-center mx-2">
+                        <span class="skill-icon text-danger"><i class="bi bi-filetype-html"></i></span>
+                        <div>HTML</div>
+                    </div>
+                    <div class="skill-item d-flex flex-column align-items-center justify-content-center mx-2">
+                        <span class="skill-icon text-primary"><i class="bi bi-filetype-css"></i></span>
+                        <div>CSS</div>
+                    </div>
+                    <div class="skill-item d-flex flex-column align-items-center justify-content-center mx-2">
+                        <span class="skill-icon text-warning"><i class="bi bi-filetype-js"></i></span>
+                        <div>JavaScript</div>
+                    </div>
+                    <div class="skill-item d-flex flex-column align-items-center justify-content-center mx-2">
+                        <span class="skill-icon text-info"><i class="bi bi-bootstrap"></i></span>
+                        <div>Bootstrap</div>
+                    </div>
+                    <div class="skill-item d-flex flex-column align-items-center justify-content-center mx-2">
+                        <span class="skill-icon text-success"><i class="bi bi-box"></i></span>
+                        <div>UAdmin</div>
+                    </div>
+                    <div class="skill-item d-flex flex-column align-items-center justify-content-center mx-2">
+                        <span class="skill-icon" style="color:#00ADD8;"><i class="bi bi-terminal"></i></span>
+                        <div>Go</div>
+                    </div>
+                    <div class="skill-item d-flex flex-column align-items-center justify-content-center mx-2">
+                        <span class="skill-icon text-secondary"><i class="bi bi-filetype-py"></i></span>
+                        <div>Python</div>
+                    </div>
+                    <div class="skill-item d-flex flex-column align-items-center justify-content-center mx-2">
+                        <span class="skill-icon text-primary"><i class="bi bi-filetype-cpp"></i></span>
+                        <div>C++</div>
+                    </div>
+                    <div class="skill-item d-flex flex-column align-items-center justify-content-center mx-2">
+                        <span class="skill-icon" style="color:#00c4cc;">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <circle cx="16" cy="16" r="16" fill="#00c4cc"/>
+                                <text x="16" y="21" text-anchor="middle" font-size="14" fill="#fff" font-family="Arial" font-weight="bold">Canva</text>
+                            </svg>
+                        </span>
+                        <div>Canva</div>
+                    </div>
+                    <div class="skill-item d-flex flex-column align-items-center justify-content-center mx-2">
+                        <span class="skill-icon" style="color:#F24E1E;">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <rect x="8" y="4" width="16" height="8" rx="4" fill="#F24E1E"/>
+                                <rect x="8" y="12" width="16" height="8" rx="4" fill="#A259FF"/>
+                                <rect x="8" y="20" width="8" height="8" rx="4" fill="#1ABCFE"/>
+                                <rect x="16" y="20" width="8" height="8" rx="4" fill="#0ACF83"/>
+                            </svg>
+                        </span>
+                        <div>Figma</div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </section>
+
+    <!-- Projects & Works Section (Modern UI Showcase with Sorting) -->
+    <section class="projects-section py-5 border-top bg-white">
+        <div class="container">
+            <h2 class="text-center mb-4">Projects & Works</h2>
+            <p class="text-center mb-4">
+                A showcase of my work in coding, design, and hardware development. Filter by category to explore academic, personal, and graphic design projects.
+            </p>
+            <div class="d-flex justify-content-center mb-4 gap-2">
+                <button class="btn btn-outline-primary active" data-filter="all">All</button>
+                <button class="btn btn-outline-secondary" data-filter="academics">Academics</button>
+                <button class="btn btn-outline-secondary" data-filter="personal">Personal</button>
+                <button class="btn btn-outline-secondary" data-filter="graphic">Graphic Designs</button>
+            </div>
+            <div class="row g-4" id="projectsShowcase">
+                <!-- Project 1: Academics -->
+                <div class="col-md-6 col-lg-3 project-item" data-category="academics">
+                    <div class="project-card rounded shadow-sm overflow-hidden bg-light h-100">
+                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" alt="Portfolio Website" class="w-100" style="height:180px;object-fit:cover;">
+                        <div class="p-3 text-center">
+                            <h5 class="mb-2">Portfolio Website</h5>
+                            <div class="mb-1 small text-muted">Platform: Web</div>
+                            <div class="mb-1 small text-muted">Tools: HTML, CSS, Bootstrap</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2: Academics -->
+                <div class="col-md-6 col-lg-3 project-item" data-category="academics">
+                    <div class="project-card rounded shadow-sm overflow-hidden bg-light h-100">
+                        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="IoT Sensor System" class="w-100" style="height:180px;object-fit:cover;">
+                        <div class="p-3 text-center">
+                            <h5 class="mb-2">IoT Sensor System</h5>
+                            <div class="mb-1 small text-muted">Platform: Embedded</div>
+                            <div class="mb-1 small text-muted">Tools: Arduino, Python</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3: Graphic Designs -->
+                <div class="col-md-6 col-lg-3 project-item" data-category="graphic">
+                    <div class="project-card rounded shadow-sm overflow-hidden bg-light h-100">
+                        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Graphic Design Suite" class="w-100" style="height:180px;object-fit:cover;">
+                        <div class="p-3 text-center">
+                            <h5 class="mb-2">Graphic Design Suite</h5>
+                            <div class="mb-1 small text-muted">Platform: Web/Print</div>
+                            <div class="mb-1 small text-muted">Tools: Canva, Figma</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4: Personal -->
+                <div class="col-md-6 col-lg-3 project-item" data-category="personal">
+                    <div class="project-card rounded shadow-sm overflow-hidden bg-light h-100">
+                        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80" alt="Python Automation" class="w-100" style="height:180px;object-fit:cover;">
+                        <div class="p-3 text-center">
+                            <h5 class="mb-2">Python Automation</h5>
+                            <div class="mb-1 small text-muted">Platform: Desktop</div>
+                            <div class="mb-1 small text-muted">Tools: Python</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 5: Academics -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Move all style and script tags before closing body -->
+    <style>
+    .project-card {
+        cursor: pointer;
+        transition: box-shadow 0.2s;
+    }
+    .project-card:hover, .project-card:focus-within {
+        box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+    }
+    .btn[data-filter].active {
+        background-color: #0d6efd;
+        color: #fff;
+        border-color: #0d6efd;
+    }
+    /* Skills Carousel Animation */
+    .skills-carousel {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+    .skills-track {
+        display: flex;
+        flex-wrap: nowrap;
+        animation: scrollSkills 30s linear infinite;
+        will-change: transform;
+    }
+    @keyframes scrollSkills {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+    }
+    .skill-item {
+        min-width: 120px;
+        text-align: center;
+        padding: 8px 0;
+    }
+
+    /* Smooth corners for cards and buttons */
+    .project-card,
+    .btn[data-filter] {
+        border-radius: 1.25rem !important;
+        transition: box-shadow 0.2s, transform 0.2s;
+    }
+
+    /* Button highlight on hover/focus */
+    .btn[data-filter]:hover,
+    .btn[data-filter]:focus {
+        box-shadow: 0 0 0.5rem 0.2rem rgba(13,110,253,0.15);
+        transform: translateY(-2px) scale(1.04);
+    }
+
+    /* Project card highlight and float effect */
+    .project-card:hover,
+    .project-card:focus-within {
+        box-shadow: 0 1rem 2rem rgba(13,110,253,0.18), 0 0.5rem 1rem rgba(0,0,0,0.10);
+        transform: translateY(-8px) scale(1.03);
+        border-color: #0d6efd;
+    }
+
+    /* Black & white image, color on hover */
+    .project-card img {
+        filter: grayscale(100%);
+        transition: filter 0.4s, transform 0.3s;
+        will-change: filter, transform;
+    }
+
+    .project-card:hover img,
+    .project-card:focus-within img {
+        filter: grayscale(0%);
+        transform: scale(1.06) translateY(-6px);
+        box-shadow: 0 0.5rem 1rem rgba(13,110,253,0.12);
+    }
+
+    /* Optional: subtle glow on card hover */
+    .project-card:hover::after,
+    .project-card:focus-within::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        box-shadow: 0 0 1.5rem 0.5rem rgba(13,110,253,0.10);
+        pointer-events: none;
+    }
+    </style>
+    <script>
+    document.querySelectorAll('.btn[data-filter]').forEach(btn => {
+        btn.addEventListener('click', function() {
+            document.querySelectorAll('.btn[data-filter]').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            const filter = btn.getAttribute('data-filter');
+            document.querySelectorAll('.project-item').forEach(item => {
+                if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                    item.style.display = '';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    });
+    </script>
+
+    <!-- Certificates & Achievements Slideshow Section -->
+    <section class="certificates-section py-5 border-top bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Certificates & Achievements</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-10 position-relative">
+                    <!-- Slideshow Card Container with side navigation buttons -->
+                    <div class="cert-slider position-relative overflow-hidden d-flex align-items-center justify-content-center" style="min-height:380px;">
+                        <button id="certPrev" class="btn btn-outline-secondary rounded-circle shadow-lg position-absolute start-0 top-50 translate-middle-y" style="width:48px;height:48px;z-index:2;">
+                            <i class="bi bi-chevron-left fs-3"></i>
+                        </button>
+                        <div id="certSlides" class="d-flex transition-slider w-100 align-items-center" style="transition: transform 0.7s cubic-bezier(.77,0,.18,1); will-change: transform;">
+                            <!-- Slides will be injected by JS -->
+                        </div>
+                        <button id="certNext" class="btn btn-outline-secondary rounded-circle shadow-lg position-absolute end-0 top-50 translate-middle-y" style="width:48px;height:48px;z-index:2;">
+                            <i class="bi bi-chevron-right fs-3"></i>
+                        </button>
+                    </div>
+                    <!-- Pagination Circles -->
+                    <div class="d-flex justify-content-center gap-2 mt-4">
+                        <!-- Dots will be injected by JS -->
+                        <div id="certDots"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <style>
+    .certificates-section .cert-slider {
+        background: linear-gradient(135deg, #f8fafc 60%, #e0e7ff 100%);
+        border-radius: 2.5rem;
+        box-shadow: 0 1.5rem 2.5rem rgba(13,110,253,0.10), 0 0.5rem 1rem rgba(0,0,0,0.10);
+        min-height: 380px;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .certificates-section .cert-card {
+        min-width: 100%;
+        max-width: 100%;
+        transition: box-shadow 0.2s, transform 0.2s;
+        border-radius: 2.5rem !important;
+        background: rgba(255,255,255,0.35);
+        box-shadow: 0 1.5rem 2.5rem rgba(13,110,253,0.10), 0 0.5rem 1rem rgba(0,0,0,0.10);
+        position: relative;
+        z-index: 1;
+        margin: 0 0.5rem;
+        display: flex;
+        align-items: stretch;
+        overflow: hidden;
+        backdrop-filter: blur(12px);
+    }
+    .certificates-section .cert-card:hover {
+        box-shadow: 0 2rem 3rem rgba(13,110,253,0.15), 0 1rem 2rem rgba(0,0,0,0.12);
+        transform: scale(1.01);
+    }
+    .cert-card .cert-img {
+        border-radius: 2rem;
+        box-shadow: 0 0.5rem 1rem rgba(13,110,253,0.10);
+        transition: transform 0.5s cubic-bezier(.77,0,.18,1), box-shadow 0.3s;
+        object-fit: cover;
+        width: 100%;
+        max-width: 320px;
+        height: 320px;
+        background: #e0e7ff;
+    }
+    .cert-card:hover .cert-img {
+        transform: scale(1.04) rotate(-2deg);
+        box-shadow: 0 1rem 2rem rgba(13,110,253,0.15);
+    }
+    .cert-dot {
+        border-radius: 50%;
+        display: inline-block;
+        opacity: 0.3;
+        cursor: pointer;
+        transition: opacity 0.3s, background 0.3s, transform 0.3s;
+        border: 2px solid #fff;
+        box-shadow: 0 0.2rem 0.5rem rgba(13,110,253,0.10);
+        background: #adb5bd;
+        width: 18px;
+        height: 18px;
+    }
+    .cert-dot.active {
+        background: linear-gradient(135deg, #6366f1 60%, #0d6efd 100%);
+        opacity: 1;
+        transform: scale(1.15);
+        box-shadow: 0 0.5rem 1rem rgba(13,110,253,0.12);
+    }
+    #certPrev, #certNext {
+        transition: box-shadow 0.2s, background 0.2s, transform 0.2s;
+        background: rgba(255,255,255,0.7);
+        border: none;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    #certPrev:hover, #certNext:hover {
+        background: #e0e7ff;
+        box-shadow: 0 0.5rem 1rem rgba(13,110,253,0.12);
+        transform: scale(1.08);
+    }
+    /* GenZ Modern UI details */
+    .cert-card .cert-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #6366f1;
+        letter-spacing: 0.02em;
+        margin-bottom: 1rem;
+        word-break: break-word;
+    }
+    .cert-card .cert-desc {
+        font-size: 1.1rem;
+        color: #6c757d;
+        margin-bottom: 1rem;
+        word-break: break-word;
+    }
+    .cert-card .cert-date {
+        font-size: 0.95rem;
+        color: #7c3aed;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        word-break: break-word;
+    }
+    .cert-card .cert-details {
+        font-size: 1rem;
+        color: #22223b;
+        margin-bottom: 0.5rem;
+        word-break: break-word;
+    }
+    .cert-card .col-md-6 {
+        min-width: 0;
+    }
+    @media (max-width: 768px) {
+        .cert-card .cert-img {
+            height: 180px;
+            max-width: 180px;
+        }
+        .cert-card .cert-title {
+            font-size: 1.2rem;
+        }
+        .cert-card {
+            flex-direction: column !important;
+            padding: 1rem !important;
+        }
+        .cert-card .col-md-6 {
+            width: 100%;
+            min-width: 0;
+        }
+    }
+    </style>
+    <script>
+    // Certificates data
+    const certificates = [
+        {
+            img: "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=80",
+            title: "Web Development Bootcamp",
+            desc: "Completed an intensive bootcamp covering HTML, CSS, JavaScript, and responsive design.",
+            date: "Issued by XYZ Academy · Jan 2024",
+            details: "Project: Portfolio Website · Duration: 3 months · Grade: Excellent"
+        },
+        {
+            img: "https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=800&q=80",
+            title: "Python Programming Certificate",
+            desc: "Demonstrated proficiency in Python programming and automation techniques.",
+            date: "Issued by ABC Institute · Mar 2023",
+            details: "Project: Data Automation · Duration: 2 months · Grade: Distinction"
+        },
+        {
+            img: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80",
+            title: "Graphic Design Mastery",
+            desc: "Awarded for excellence in graphic and UI design using Canva and Figma.",
+            date: "Issued by DesignPro · Aug 2023",
+            details: "Project: Branding Suite · Duration: 1 month · Grade: Top Performer"
+        },
+        {
+            img: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80",
+            title: "IoT & Embedded Systems",
+            desc: "Recognized for hands-on project in IoT sensor integration and embedded programming.",
+            date: "Issued by TechLabs · Nov 2022",
+            details: "Project: Smart Sensor · Duration: 2 months · Grade: Outstanding"
+        },
+        {
+            img: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
+            title: "C++ Programming Excellence",
+            desc: "Achieved top marks in advanced C++ programming and algorithm design.",
+            date: "Issued by CodeSchool · May 2023",
+            details: "Project: Algorithm Design · Duration: 2 months · Grade: High Honors"
+        }
+    ];
+    // Render slides
+    let certIndex = 0;
+    let certTimer = null;
+
+    // Render slides
+    function renderSlides() {
+        const slides = certificates.map((c, i) => `
+            <div class="cert-card row g-0 align-items-stretch px-4 py-3" style="min-height:380px;">
+                <div class="col-md-6 d-flex align-items-center justify-content-center">
+                    <img src="${c.img}" alt="Certificate" class="cert-img img-fluid shadow">
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center h-100" style="overflow-wrap:break-word;word-break:break-word;">
+                    <h4 class="cert-title mb-3">${c.title}</h4>
+                    <p class="cert-desc mb-3">${c.desc}</p>
+                    <div class="cert-date mb-2">${c.date}</div>
+                    <div class="cert-details mb-2">${c.details}</div>
+                </div>
+            </div>
+        `).join('');
+        document.getElementById('certSlides').innerHTML = slides;
+    }
+
+    // Render dots
+    function renderDots() {
+        const dots = certificates.map((_, i) =>
+            `<span class="cert-dot${i === certIndex ? ' active' : ''}" data-dot="${i}"></span>`
+        ).join('');
+        document.getElementById('certDots').innerHTML = dots;
+        document.querySelectorAll('.cert-dot').forEach(dot => {
+            dot.onclick = function() {
+                certIndex = parseInt(dot.getAttribute('data-dot'));
+                slideTo(certIndex);
+                resetCertTimer();
+            };
+        });
+    }
+
+    // Slide to certificate
+    function slideTo(idx) {
+        certIndex = idx;
+        const slider = document.getElementById('certSlides');
+        slider.style.transform = `translateX(-${idx * 100}%)`;
+        renderDots();
+    }
+
+    // Next/Prev
+    function nextCertificate() {
+        certIndex = (certIndex + 1) % certificates.length;
+        slideTo(certIndex);
+    }
+    function prevCertificate() {
+        certIndex = (certIndex - 1 + certificates.length) % certificates.length;
+        slideTo(certIndex);
+    }
+
+    // Timer for auto-slide
+    function resetCertTimer() {
+        if (certTimer) clearInterval(certTimer);
+        certTimer = setInterval(nextCertificate, 4000);
+    }
+
+    // Button events
+    document.getElementById('certPrev').onclick = function() {
+        prevCertificate();
+        resetCertTimer();
+    };
+    document.getElementById('certNext').onclick = function() {
+        nextCertificate();
+        resetCertTimer();
+    };
+
+    // Initial render
+    renderSlides();
+    slideTo(certIndex);
+    resetCertTimer();
+
+    // Responsive: re-render on resize for mobile
+    window.addEventListener('resize', () => {
+        renderSlides();
+        slideTo(certIndex);
+    });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Responsive carousel animation adjustment
+        function adjustSkillsAnimation() {
+            const track = document.getElementById('skillsTrack');
+            const items = track.children.length / 2; // repeated for seamless scroll
+            const itemWidth = track.children[0].offsetWidth + 32; // margin
+            const totalWidth = items * itemWidth;
+            track.style.width = (items * 2 * itemWidth) + 'px';
+            track.style.animationDuration = (totalWidth / 60) + 's'; // speed: 60px/sec
+        }
+        window.addEventListener('load', adjustSkillsAnimation);
+        window.addEventListener('resize', adjustSkillsAnimation);
+    </script>
+</body>
+</html>
