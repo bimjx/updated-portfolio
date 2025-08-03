@@ -1,4 +1,4 @@
-﻿# updated-portfolio
+# updated-portfolio
 
 # 📱 Bimjx Portfolio
 
@@ -8,7 +8,7 @@ Welcome to my personal portfolio website showcasing my skills, projects, and jou
 
 ## 🚀 Live Demo
 
-View the deployed portfolio here: [https://bimjx.github.io/updated-portfolio/](https://bimjx.github.io/updated-portfolio/)
+View the deployed portfolio here: [link] not deployed yet
 
 ---
 
